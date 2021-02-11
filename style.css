@@ -1,0 +1,153 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: hsl(229, 57%, 11%);
+    background-image: url("./images/bg-mobile.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+}
+section{
+    background-color: hsl(228, 56%, 26%);
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    padding: 3rem;
+}
+
+.header{
+    border-top-right-radius: 40%;
+}
+
+.logo-container{
+    background-color: hsl(229, 57%, 11%);
+    margin-top: 1.7rem;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border:1px solid red;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 63%;
+}
+
+.storage p, .storage input{
+    margin-bottom: 1rem;
+}
+
+input[type='range'] {
+        background: linear-gradient(to right, hsl(6, 100%, 80%) 0%, hsl(335, 100%, 65%) 82%, hsl(229, 57%, 11%) 82%, hsl(229, 57%, 11%) 100%);
+      border: solid 2px #444;
+      border-radius: 8px;
+      height: 15px;
+      
+      -webkit-appearance: none;
+}
+    
+input[type='range']::-webkit-slider-thumb {
+    background-color: white;
+    border: solid 1px #dedede;
+    border-radius: 50%;;
+    height: 10px;
+    width: 10px;
+    
+    -webkit-appearance: none;
+}    
+  
+
+
+.max-min{
+    display: flex;
+    justify-content: space-between; 
+}
+.storage{
+    position:relative;
+}
+.storage-left{
+    background-color:white;
+    color: black;
+    font-weight: 800;
+    font-size:2.5rem;
+    border-radius: 10px;
+    position:absolute;
+    text-align: center;
+    padding: 0.3rem 1.5rem;
+    top:0;
+    left:25%;
+    top:80%;
+}
+
+.storage-left span{
+    font-size: 13px;
+    color: hsl(229, 7%, 55%);
+    margin-left: 10px;
+}
+
+
+@media (min-width:900px){
+    body{
+    background-image: url("./images/bg-desktop.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    }
+    .wrapper{
+        display: flex;
+        width: 70%;
+        justify-content: space-between;
+    }
+    section{
+        margin-bottom: 0;
+    }
+    .header{
+        flex-basis: 40%;
+        margin-right: 5%;
+    }
+
+    .logo-container{
+        margin-right: 20px;
+        flex-basis: 33%;
+    }
+    .storage{
+        flex-basis: 60%;
+        padding: 0;
+        align-self: flex-end;
+        padding: 1.5rem 2rem;
+    }
+
+    .storage-left{
+       top: -35%;
+       left: 60%;
+       padding: 0.2rem 1rem;;
+    }
+
+    .storage-left:before {
+        content: "";
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        border-left: 20px solid transparent;
+        border-right: 20px solid white;
+        border-top: 20px solid white;
+        border-bottom: 20px solid transparent;
+        right: 0px;
+        bottom: -15px;
+      }
+    
+
+}
