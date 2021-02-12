@@ -69,7 +69,29 @@ input[type='range']::-webkit-slider-thumb {
     
     -webkit-appearance: none;
 }    
-  
+/* De la siguiente manera se puede hacer sin CSS mediante una box-shadow (pero no consigo hacerlo con gradient)
+.wb-PKR-slider {
+    -webkit-appearance:none;
+    appearance:none;
+    margin:5px;
+    width:calc(100% - 10px);
+    width:-webkit-calc(100% - 10px);
+    height:25px;
+    outline:none;
+    background:bisque;
+    border-radius:12px;   
+    overflow: hidden;
+}
+.wb-PKR-slider::-webkit-slider-thumb {
+    -webkit-appearance:none;
+    appearance:none;
+    width:25px;
+    height:25px;
+    background:sienna;
+    box-shadow: -100vw 0 0 calc(100vw - 12px) peru;
+    cursor:pointer;
+    border-radius: 50%; 
+} */
 
 
 .max-min{
